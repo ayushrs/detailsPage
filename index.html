@@ -1,14 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+    .main_img {
+      box-sizing: border-box;
+      background: rgba(217, 217, 217, 0.58);
+      border: 1px solid white;
+      box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+      border-radius: 17px;
+      cursor: pointer;
+      transition: all 0.5s;
+      animation-name: fadeInLeft; 
+      animation-duration: 2s; 
+    }
 
+    .main_img:hover {
+      border: 1px solid #f08917;
+      transform: scale(1.05);
+    }
 
+    .main_img:active {
+      transform: scale(0.95) rotateZ(1.7deg);
+    }
+    .Project_details{
+        padding: 2rem;
+        background-color:#F9CFA2; 
+        color: black;
+        border-radius: 17px;
+        animation-name: fadeInRight; 
+        animation-duration: 2s; 
+    }
+    .Details_list{
+        list-style-type: disc;
+        color: #f08917;
+        
+    }
+    .Details_list li h5,
+    .Details_list li p {
+            color: black; /* Black color for text inside <h5> and <p> tags */
+        }
+        .Contact_details{
+            background-color: #f08917;
+            border-radius: 17px;
+           padding: 2rem;
+           color: white;
+        }
+        .Contact_list{
+            list-style-type: none;
+            padding: 0%;
+            margin-top: 3rem;
+          
+        }
+        .Contact_list li{
+            padding-bottom: 2rem;
+        }
+        .icon_container{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background-color: #ffb96e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+        .icon_container:hover{
+            background-color: white;
+            color: #f08917;
+            transition: .3s;
+        }
+        .images{
+            box-shadow: 
+        rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset,
+        rgba(0, 0, 0, 0.2) 0px -10px 10px -5px;
+            border-radius: 1rem;
+        }
+        .image-container {
+            padding: .5rem;
+            overflow: hidden; /* Hide any overflow */
+            position: relative; /* Establish positioning context for absolute positioning */
+        }
 
-</script>
-</body>
+        .image-container img {
+            display: block;
+            transition: transform 1s ease; /* Smooth transition for transform */
+        }
+
+        .image-container:hover img {
+            transform: translateX(-10px); /* Shift image 10px to the left on hover */
+        }
+  </style>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <img class="main_img" src="fineui1.png" width="100%" alt="" />
+        </div>
+        <div class="col-lg-4">
+          <div class="Project_details">
+            <h2>Project Details</h2>
+            <ul class="Details_list">
+              <li>
+                <h5>Project Name:</h5>
+                <p>POSHIDA</p>
+              </li>
+              <li>
+                <h5>Clients:</h5>
+                <p> Usha Singh</p>
+              </li>
+              <li>
+                <h5>Techology:</h5>
+                <p>CodeIgniter, PHP, HTML 5, Bootstrap 4, CSS, MVC Framework</p>
+              </li>
+              <li>
+                <h5>Category:</h5>
+                <p>E-Commerce</p>
+              </li>
+              <li>
+                <h5>Project Year:</h5>
+                <p>August 12, 2023</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 mb-5">
+        <div class="row ">
+            <div class="col-lg-8">
+                <h1 class="text-center fw-bold">POSHIDA</h1>
+                <p class="text-center fw-bold">We're your Creative Agency, since 2010</p>
+                <p>In the vibrant tapestry of Indian fashion, Poshida, Grace In Every Stitch stands out as a beacon of style and tradition. Established in 2018 by the visionary Usha Singh, our brand has become synonymous with quality, affordability, and timeless fashion. From the heart of India, we bring you an exquisite range of Women's wear, Men's wear, Kids wear, and Accessories, ensuring that every family member can indulge in the joy of fashionable clothing.
+
+                    A SEAMLESS BLEND OF TRADITION AND TREND
+                    
+                    Poshida takes pride in offering a diverse collection of clothing that seamlessly blends the richness of Indian traditions with contemporary fashion trends. Our commitment to quality is reflected in premium cotton fabrics, providing comfort without compromising style. From ethnic ensembles to chic casual wear, Poshida is your go-to destination for all things fashion.</p>
+                <h1>Services</h1>  
+                <p>Responsive & Mobile Friendly Website, Back-End Development, Content Management Systems, Graphic Designing, SEO, SMO, </p>        
+            <div class="row">
+                <div class="col-lg-6 image-container">
+                    <img class="images" src="fineui1.png" width="100%" alt="">
+                </div>
+                <div class="col-lg-6 image-container">
+                    <img class="images" src="fineui2.png" width="100%" alt="">
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="Contact_details animate__animated animate__zoomIn">
+                    <h2 class="text-center">Dont hesitate to <br>contact us</h2>
+                    <ul class="Contact_list">
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3 icon_container">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="col-lg-9">
+                                    <p class="m-0">Call Us</p>
+                                    <h5>+91 94140 11111</h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3 icon_container">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="col-lg-9">
+                                    <p class="m-0">Write to us</p>
+                                    <h5>info@example.com</h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3 icon_container">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div class="col-lg-9">
+                                    <p class="m-0">
+                                        Office hours</p>
+                                    <h5>Mon-Sat 9:00 - 7:00</h5>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
